@@ -1,0 +1,123 @@
+{
+  "resourceType": "Bundle",
+  "id": "matbank-bundle-001",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-001",
+        "birthDate": "1992-04-15",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-001",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 118, "unit": "mmHg" },
+        "effectiveDateTime": "2026-01-10",
+        "extension": [{ "url": "gestational_week", "valueInteger": 12 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-002",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 76, "unit": "mmHg" },
+        "effectiveDateTime": "2026-01-10",
+        "extension": [{ "url": "gestational_week", "valueInteger": 12 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-003",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "urine_protein" },
+        "valueQuantity": { "value": 0.1, "unit": "g/dL" },
+        "effectiveDateTime": "2026-01-10",
+        "extension": [{ "url": "gestational_week", "valueInteger": 12 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-004",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "weight" },
+        "valueQuantity": { "value": 68.5, "unit": "kg" },
+        "effectiveDateTime": "2026-01-10",
+        "extension": [{ "url": "gestational_week", "valueInteger": 12 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-005",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 124, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-07",
+        "extension": [{ "url": "gestational_week", "valueInteger": 16 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-006",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 80, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-07",
+        "extension": [{ "url": "gestational_week", "valueInteger": 16 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-007",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 138, "unit": "mmHg" },
+        "effectiveDateTime": "2026-03-07",
+        "extension": [{ "url": "gestational_week", "valueInteger": 20 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-008",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 88, "unit": "mmHg" },
+        "effectiveDateTime": "2026-03-07",
+        "extension": [{ "url": "gestational_week", "valueInteger": 20 }],
+        "performer": [{ "display": "Oracle Health" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-001",
+        "subject": { "reference": "Patient/patient-001" },
+        "code": {
+          "coding": [{ "system": "ICD-10", "code": "O14.0", "display": "Mild preeclampsia" }]
+        },
+        "onsetDateTime": "2026-03-07",
+        "clinicalStatus": { "text": "suspected" }
+      }
+    }
+  ]
+}

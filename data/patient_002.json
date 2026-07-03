@@ -1,0 +1,111 @@
+{
+  "resourceType": "Bundle",
+  "id": "matbank-bundle-002",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-002",
+        "birthDate": "1988-09-22",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-009",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 112, "unit": "mmHg" },
+        "effectiveDateTime": "2026-01-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 10 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-010",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 72, "unit": "mmHg" },
+        "effectiveDateTime": "2026-01-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 10 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-011",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "weight" },
+        "valueQuantity": { "value": 72.0, "unit": "kg" },
+        "effectiveDateTime": "2026-01-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 10 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-012",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "blood_glucose" },
+        "valueQuantity": { "value": 95, "unit": "mg/dL" },
+        "effectiveDateTime": "2026-01-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 10 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-013",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 114, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-12",
+        "extension": [{ "url": "gestational_week", "valueInteger": 14 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-014",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 74, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-12",
+        "extension": [{ "url": "gestational_week", "valueInteger": 14 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-015",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": { "text": "blood_glucose" },
+        "valueQuantity": { "value": 140, "unit": "mg/dL" },
+        "effectiveDateTime": "2026-02-12",
+        "extension": [{ "url": "gestational_week", "valueInteger": 14 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-002",
+        "subject": { "reference": "Patient/patient-002" },
+        "code": {
+          "coding": [{ "system": "ICD-10", "code": "O24.4", "display": "Gestational diabetes" }]
+        },
+        "onsetDateTime": "2026-02-12",
+        "clinicalStatus": { "text": "active" }
+      }
+    }
+  ]
+}

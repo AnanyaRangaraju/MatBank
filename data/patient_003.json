@@ -1,0 +1,99 @@
+{
+  "resourceType": "Bundle",
+  "id": "matbank-bundle-003",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-003",
+        "birthDate": "1995-03-08",
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-016",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 155, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-01",
+        "extension": [{ "url": "gestational_week", "valueInteger": 24 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-017",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "diastolic_blood_pressure" },
+        "valueQuantity": { "value": 98, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-01",
+        "extension": [{ "url": "gestational_week", "valueInteger": 24 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-018",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "urine_protein" },
+        "valueQuantity": { "value": 0.45, "unit": "g/dL" },
+        "effectiveDateTime": "2026-02-01",
+        "extension": [{ "url": "gestational_week", "valueInteger": 24 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-019",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "weight" },
+        "valueQuantity": { "value": 85.0, "unit": "kg" },
+        "effectiveDateTime": "2026-02-01",
+        "extension": [{ "url": "gestational_week", "valueInteger": 24 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-020",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "systolic_blood_pressure" },
+        "valueQuantity": { "value": 999, "unit": "mmHg" },
+        "effectiveDateTime": "2026-02-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 26 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-021",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": { "text": "urine_protein" },
+        "valueQuantity": null,
+        "effectiveDateTime": "2026-02-15",
+        "extension": [{ "url": "gestational_week", "valueInteger": 26 }],
+        "performer": [{ "display": "Epic" }]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-003",
+        "subject": { "reference": "Patient/patient-003" },
+        "code": {
+          "coding": [{ "system": "ICD-10", "code": "O14.1", "display": "Severe preeclampsia" }]
+        },
+        "onsetDateTime": "2026-02-01",
+        "clinicalStatus": { "text": "active" }
+      }
+    }
+  ]
+}
