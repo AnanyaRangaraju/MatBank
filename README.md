@@ -5,7 +5,6 @@ A longitudinal clinical and biomarker data pipeline designed to serve as the
 training and inference data layer for future LLM and ML powered preeclampsia 
 and maternal risk prediction workflows.
 
-Built with AI/ML readiness as a core architectural principle from day one.
 
 ---
 
@@ -93,8 +92,6 @@ FHIR R4 aligned relational schema covering 7 core clinical indicators:
 - Fundal height
 - Fetal heart rate
 
-Designed for interoperability with Epic and Oracle Health systems 
-serving 250M+ US patients.
 
 ---
 
