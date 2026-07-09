@@ -1,5 +1,5 @@
 # MatBank - Maternal Health Clinical Data Pipeline
-### Mativa Diagnostics | Built by Ananya Rangaraju
+### Built by Ananya Rangaraju
 
 A longitudinal clinical and biomarker data pipeline designed to serve as the 
 training and inference data layer for future LLM and ML powered preeclampsia 
